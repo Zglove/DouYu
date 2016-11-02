@@ -1,0 +1,18 @@
+//
+//  CollectionHeaderView.swift
+//  DYTV
+//
+//  Created by people on 2016/11/2.
+//  Copyright © 2016年 people2000. All rights reserved.
+//
+
+import UIKit
+
+class CollectionHeaderView: UICollectionReusableView {
+
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
+    }
+    
+}

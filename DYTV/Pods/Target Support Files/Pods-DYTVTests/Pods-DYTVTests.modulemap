@@ -1,0 +1,6 @@
+framework module Pods_DYTVTests {
+  umbrella header "Pods-DYTVTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

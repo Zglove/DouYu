@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D1FBEFFFE6696E9BCC92DA7 /* Pods_DYTVTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841F9ED15D313854D56140E7 /* Pods_DYTVTests.framework */; };
 		4E1027BB1DC6D5AE0019BEC7 /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1027BA1DC6D5AE0019BEC7 /* PageContentView.swift */; };
 		4E1027BD1DC6DB0F0019BEC7 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1027BC1DC6DB0F0019BEC7 /* UIColor-Extension.swift */; };
 		4E12F5601DC86AC5001E4D1B /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E12F55F1DC86AC5001E4D1B /* RecommendViewController.swift */; };
+		4E2057A91DCAD7F500A76C0E /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2057A81DCAD7F500A76C0E /* NetworkTools.swift */; };
+		4E2057AC1DCAE3A900A76C0E /* RecommenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2057AB1DCAE3A900A76C0E /* RecommenViewModel.swift */; };
+		4E2057AE1DCAEB8600A76C0E /* NSDate-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2057AD1DCAEB8600A76C0E /* NSDate-Extension.swift */; };
+		4E2057B01DCB0ADC00A76C0E /* AnchorGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2057AF1DCB0ADC00A76C0E /* AnchorGroup.swift */; };
+		4E2057B21DCB17D600A76C0E /* AnchorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2057B11DCB17D600A76C0E /* AnchorModel.swift */; };
 		4E54A43B1DC2E04500072FDE /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E54A4391DC2E04500072FDE /* Home.storyboard */; };
 		4E54A43D1DC2E09900072FDE /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E54A43C1DC2E09900072FDE /* Live.storyboard */; };
 		4E54A4401DC2E0B100072FDE /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E54A43E1DC2E0B100072FDE /* Follow.storyboard */; };
@@ -31,6 +37,8 @@
 		4E8F50F11DC1E3C4001303AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E8F50EF1DC1E3C4001303AD /* LaunchScreen.storyboard */; };
 		4E8F50FC1DC1E3C5001303AD /* DYTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8F50FB1DC1E3C5001303AD /* DYTVTests.swift */; };
 		4E8F51071DC1E3C5001303AD /* DYTVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8F51061DC1E3C5001303AD /* DYTVUITests.swift */; };
+		61ABA93127AFE159F3CAA715 /* Pods_DYTVUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E32AEABD5B7F9E45FE16FD99 /* Pods_DYTVUITests.framework */; };
+		C56675E390C2BF01BCBFEB34 /* Pods_DYTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B5ACEA58362EC4A9C64115 /* Pods_DYTV.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +62,11 @@
 		4E1027BA1DC6D5AE0019BEC7 /* PageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
 		4E1027BC1DC6DB0F0019BEC7 /* UIColor-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 		4E12F55F1DC86AC5001E4D1B /* RecommendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
+		4E2057A81DCAD7F500A76C0E /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
+		4E2057AB1DCAE3A900A76C0E /* RecommenViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommenViewModel.swift; sourceTree = "<group>"; };
+		4E2057AD1DCAEB8600A76C0E /* NSDate-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate-Extension.swift"; sourceTree = "<group>"; };
+		4E2057AF1DCB0ADC00A76C0E /* AnchorGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnchorGroup.swift; sourceTree = "<group>"; };
+		4E2057B11DCB17D600A76C0E /* AnchorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnchorModel.swift; sourceTree = "<group>"; };
 		4E54A43A1DC2E04500072FDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DYTV/Base.lproj/Home.storyboard; sourceTree = SOURCE_ROOT; };
 		4E54A43C1DC2E09900072FDE /* Live.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Live.storyboard; path = ../../Main/Live.storyboard; sourceTree = "<group>"; };
 		4E54A43F1DC2E0B100072FDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DYTV/Base.lproj/Follow.storyboard; sourceTree = SOURCE_ROOT; };
@@ -81,6 +94,15 @@
 		4E8F51021DC1E3C5001303AD /* DYTVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DYTVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E8F51061DC1E3C5001303AD /* DYTVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYTVUITests.swift; sourceTree = "<group>"; };
 		4E8F51081DC1E3C5001303AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F3C4B30298BCFE6C3B88D4E /* Pods-DYTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYTV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DYTV/Pods-DYTV.debug.xcconfig"; sourceTree = "<group>"; };
+		841F9ED15D313854D56140E7 /* Pods_DYTVTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DYTVTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		96A6CF5B00C6E0E6AE71D5AA /* Pods-DYTVUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYTVUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DYTVUITests/Pods-DYTVUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AD8DB6DA62CF4927C2392E53 /* Pods-DYTVUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYTVUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DYTVUITests/Pods-DYTVUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C7DD2D3A9F0D711ADB54B060 /* Pods-DYTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYTV.release.xcconfig"; path = "Pods/Target Support Files/Pods-DYTV/Pods-DYTV.release.xcconfig"; sourceTree = "<group>"; };
+		D6B5ACEA58362EC4A9C64115 /* Pods_DYTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DYTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD3138C99A42416374CCB5E0 /* Pods-DYTVTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYTVTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DYTVTests/Pods-DYTVTests.release.xcconfig"; sourceTree = "<group>"; };
+		DFB2F6D18A41DD03D5F0AFC7 /* Pods-DYTVTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYTVTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DYTVTests/Pods-DYTVTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E32AEABD5B7F9E45FE16FD99 /* Pods_DYTVUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DYTVUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C56675E390C2BF01BCBFEB34 /* Pods_DYTV.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D1FBEFFFE6696E9BCC92DA7 /* Pods_DYTVTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,12 +126,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61ABA93127AFE159F3CAA715 /* Pods_DYTVUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A85BB845A6347CB176E8EEB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6B5ACEA58362EC4A9C64115 /* Pods_DYTV.framework */,
+				841F9ED15D313854D56140E7 /* Pods_DYTVTests.framework */,
+				E32AEABD5B7F9E45FE16FD99 /* Pods_DYTVUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4E2057AA1DCAE35000A76C0E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4E2057AB1DCAE3A900A76C0E /* RecommenViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		4E54A4451DC2EE4B00072FDE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +189,8 @@
 		4E54A4491DC2EEA300072FDE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4E2057AF1DCB0ADC00A76C0E /* AnchorGroup.swift */,
+				4E2057B11DCB17D600A76C0E /* AnchorModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -234,6 +279,7 @@
 			children = (
 				4E54A4571DC325DC00072FDE /* UIBarButtonItem-Extension.swift */,
 				4E1027BC1DC6DB0F0019BEC7 /* UIColor-Extension.swift */,
+				4E2057AD1DCAEB8600A76C0E /* NSDate-Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -245,6 +291,8 @@
 				4E8F50FA1DC1E3C5001303AD /* DYTVTests */,
 				4E8F51051DC1E3C5001303AD /* DYTVUITests */,
 				4E8F50E41DC1E3C3001303AD /* Products */,
+				AE54F3072CB522A9F77D4A12 /* Pods */,
+				3A85BB845A6347CB176E8EEB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -314,6 +362,7 @@
 		4E8F51161DC1EE8B001303AD /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				4E2057AA1DCAE35000A76C0E /* ViewModel */,
 				4E54A4461DC2EE4B00072FDE /* Model */,
 				4E54A4471DC2EE4B00072FDE /* View */,
 				4E54A4451DC2EE4B00072FDE /* Controller */,
@@ -355,9 +404,23 @@
 			isa = PBXGroup;
 			children = (
 				4E54A4561DC3254800072FDE /* Extension */,
+				4E2057A81DCAD7F500A76C0E /* NetworkTools.swift */,
 				4E54A45B1DC33CFE00072FDE /* Common.swift */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		AE54F3072CB522A9F77D4A12 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6F3C4B30298BCFE6C3B88D4E /* Pods-DYTV.debug.xcconfig */,
+				C7DD2D3A9F0D711ADB54B060 /* Pods-DYTV.release.xcconfig */,
+				DFB2F6D18A41DD03D5F0AFC7 /* Pods-DYTVTests.debug.xcconfig */,
+				DD3138C99A42416374CCB5E0 /* Pods-DYTVTests.release.xcconfig */,
+				AD8DB6DA62CF4927C2392E53 /* Pods-DYTVUITests.debug.xcconfig */,
+				96A6CF5B00C6E0E6AE71D5AA /* Pods-DYTVUITests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -367,9 +430,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E8F510B1DC1E3C5001303AD /* Build configuration list for PBXNativeTarget "DYTV" */;
 			buildPhases = (
+				16EB3D482541C583A750F22B /* [CP] Check Pods Manifest.lock */,
 				4E8F50DF1DC1E3C3001303AD /* Sources */,
 				4E8F50E01DC1E3C3001303AD /* Frameworks */,
 				4E8F50E11DC1E3C3001303AD /* Resources */,
+				BAC62CB8DDF961D477055D0F /* [CP] Embed Pods Frameworks */,
+				C5B0C07554D4097FB63B2186 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -384,9 +450,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E8F510E1DC1E3C5001303AD /* Build configuration list for PBXNativeTarget "DYTVTests" */;
 			buildPhases = (
+				3B856CD6CB656B81FB9F487B /* [CP] Check Pods Manifest.lock */,
 				4E8F50F31DC1E3C5001303AD /* Sources */,
 				4E8F50F41DC1E3C5001303AD /* Frameworks */,
 				4E8F50F51DC1E3C5001303AD /* Resources */,
+				B3C853D15B57200EDB720C39 /* [CP] Embed Pods Frameworks */,
+				0AFB900AC16B0200CCCE938E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -402,9 +471,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E8F51111DC1E3C5001303AD /* Build configuration list for PBXNativeTarget "DYTVUITests" */;
 			buildPhases = (
+				CA6DDCC4619861932EB09357 /* [CP] Check Pods Manifest.lock */,
 				4E8F50FE1DC1E3C5001303AD /* Sources */,
 				4E8F50FF1DC1E3C5001303AD /* Frameworks */,
 				4E8F51001DC1E3C5001303AD /* Resources */,
+				5B272B97D99C1B2BC2D66351 /* [CP] Embed Pods Frameworks */,
+				E5FAC9934E31478018A86665 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -496,6 +568,144 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0AFB900AC16B0200CCCE938E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DYTVTests/Pods-DYTVTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		16EB3D482541C583A750F22B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3B856CD6CB656B81FB9F487B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5B272B97D99C1B2BC2D66351 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DYTVUITests/Pods-DYTVUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3C853D15B57200EDB720C39 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DYTVTests/Pods-DYTVTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAC62CB8DDF961D477055D0F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DYTV/Pods-DYTV-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5B0C07554D4097FB63B2186 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DYTV/Pods-DYTV-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA6DDCC4619861932EB09357 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E5FAC9934E31478018A86665 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DYTVUITests/Pods-DYTVUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4E8F50DF1DC1E3C3001303AD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -505,14 +715,19 @@
 				4E56A2D41DC973AF004C5FA8 /* CollectionHeaderView.swift in Sources */,
 				4E1027BD1DC6DB0F0019BEC7 /* UIColor-Extension.swift in Sources */,
 				4E12F5601DC86AC5001E4D1B /* RecommendViewController.swift in Sources */,
+				4E2057B01DCB0ADC00A76C0E /* AnchorGroup.swift in Sources */,
+				4E2057AC1DCAE3A900A76C0E /* RecommenViewModel.swift in Sources */,
 				4E54A4441DC2E6BB00072FDE /* MainViewController.swift in Sources */,
 				4E54A45A1DC339AB00072FDE /* PageTitleView.swift in Sources */,
 				4E1027BB1DC6D5AE0019BEC7 /* PageContentView.swift in Sources */,
 				4E54A4581DC325DC00072FDE /* UIBarButtonItem-Extension.swift in Sources */,
 				4E54A45C1DC33CFE00072FDE /* Common.swift in Sources */,
+				4E2057AE1DCAEB8600A76C0E /* NSDate-Extension.swift in Sources */,
 				4E56A2DC1DC98865004C5FA8 /* CollectionPrettyCell.swift in Sources */,
 				4E56A2D81DC97CBF004C5FA8 /* CollectionNormalCell.swift in Sources */,
+				4E2057A91DCAD7F500A76C0E /* NetworkTools.swift in Sources */,
 				4E54A4551DC2F04C00072FDE /* HomeViewController.swift in Sources */,
+				4E2057B21DCB17D600A76C0E /* AnchorModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -679,6 +894,7 @@
 		};
 		4E8F510C1DC1E3C5001303AD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F3C4B30298BCFE6C3B88D4E /* Pods-DYTV.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -693,6 +909,7 @@
 		};
 		4E8F510D1DC1E3C5001303AD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7DD2D3A9F0D711ADB54B060 /* Pods-DYTV.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -707,6 +924,7 @@
 		};
 		4E8F510F1DC1E3C5001303AD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFB2F6D18A41DD03D5F0AFC7 /* Pods-DYTVTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -721,6 +939,7 @@
 		};
 		4E8F51101DC1E3C5001303AD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD3138C99A42416374CCB5E0 /* Pods-DYTVTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -735,6 +954,7 @@
 		};
 		4E8F51121DC1E3C5001303AD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD8DB6DA62CF4927C2392E53 /* Pods-DYTVUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = DYTVUITests/Info.plist;
@@ -748,6 +968,7 @@
 		};
 		4E8F51131DC1E3C5001303AD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96A6CF5B00C6E0E6AE71D5AA /* Pods-DYTVUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = DYTVUITests/Info.plist;

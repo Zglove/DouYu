@@ -18,5 +18,5 @@ target 'DYTV' do
     # Pods for testing
   end
 pod 'Alamofire'
-
+pod 'Kingfisher'
 end

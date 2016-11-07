@@ -119,7 +119,7 @@ extension PageTitleView{
         //2.添加ScrollLine
         //2.1获取第一个label,进行guard校验
         guard let firstLabel = titleLabels.first else {return}
-        firstLabel.textColor = UIColor(r: kSelectColor.0, g: kSelectColor.0, b: kSelectColor.0)
+        firstLabel.textColor = UIColor(r: kSelectColor.0, g: kSelectColor.1, b: kSelectColor.2)
         
         //2.2设置scrollLine的属性
         scrollView.addSubview(scrollLine)
@@ -133,8 +133,11 @@ extension PageTitleView {
 
     @objc fileprivate func titleLabelClick(tapGes: UITapGestureRecognizer){
   
-        //1.获取当前label
+        //0.获取当前label
         guard let currentLabel = tapGes.view as? UILabel else{return}
+        
+        //1.如果是重复点击则返回
+        if currentLabel.tag == currentIndex { return }
         
         //2.获取之前的label
         let oldLabel = titleLabels[currentIndex]

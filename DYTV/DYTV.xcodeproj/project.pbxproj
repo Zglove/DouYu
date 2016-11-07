@@ -37,6 +37,9 @@
 		4E8F50F11DC1E3C4001303AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E8F50EF1DC1E3C4001303AD /* LaunchScreen.storyboard */; };
 		4E8F50FC1DC1E3C5001303AD /* DYTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8F50FB1DC1E3C5001303AD /* DYTVTests.swift */; };
 		4E8F51071DC1E3C5001303AD /* DYTVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8F51061DC1E3C5001303AD /* DYTVUITests.swift */; };
+		4EA9EE901DCC6736004793B7 /* CollectionBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA9EE8F1DCC6735004793B7 /* CollectionBaseCell.swift */; };
+		4EA9EE921DCC705E004793B7 /* RecommendCycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA9EE911DCC705E004793B7 /* RecommendCycleView.swift */; };
+		4EA9EE941DCC709F004793B7 /* RecommendCycleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EA9EE931DCC709F004793B7 /* RecommendCycleView.xib */; };
 		61ABA93127AFE159F3CAA715 /* Pods_DYTVUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E32AEABD5B7F9E45FE16FD99 /* Pods_DYTVUITests.framework */; };
 		C56675E390C2BF01BCBFEB34 /* Pods_DYTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B5ACEA58362EC4A9C64115 /* Pods_DYTV.framework */; };
 /* End PBXBuildFile section */
@@ -94,6 +97,9 @@
 		4E8F51021DC1E3C5001303AD /* DYTVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DYTVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E8F51061DC1E3C5001303AD /* DYTVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYTVUITests.swift; sourceTree = "<group>"; };
 		4E8F51081DC1E3C5001303AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EA9EE8F1DCC6735004793B7 /* CollectionBaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionBaseCell.swift; sourceTree = "<group>"; };
+		4EA9EE911DCC705E004793B7 /* RecommendCycleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendCycleView.swift; sourceTree = "<group>"; };
+		4EA9EE931DCC709F004793B7 /* RecommendCycleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecommendCycleView.xib; sourceTree = "<group>"; };
 		6F3C4B30298BCFE6C3B88D4E /* Pods-DYTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYTV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DYTV/Pods-DYTV.debug.xcconfig"; sourceTree = "<group>"; };
 		841F9ED15D313854D56140E7 /* Pods_DYTVTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DYTVTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		96A6CF5B00C6E0E6AE71D5AA /* Pods-DYTVUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYTVUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DYTVUITests/Pods-DYTVUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -173,6 +179,8 @@
 			children = (
 				4E56A2D21DC973AE004C5FA8 /* CollectionHeaderView.swift */,
 				4E56A2D31DC973AE004C5FA8 /* CollectionHeaderView.xib */,
+				4EA9EE911DCC705E004793B7 /* RecommendCycleView.swift */,
+				4EA9EE931DCC709F004793B7 /* RecommendCycleView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -204,6 +212,7 @@
 				4E56A2D71DC97CBF004C5FA8 /* CollectionNormalCell.xib */,
 				4E56A2DA1DC98865004C5FA8 /* CollectionPrettyCell.swift */,
 				4E56A2DB1DC98865004C5FA8 /* CollectionPrettyCell.xib */,
+				4EA9EE8F1DCC6735004793B7 /* CollectionBaseCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -546,6 +555,7 @@
 				4E8F50EC1DC1E3C3001303AD /* Main.storyboard in Resources */,
 				4E54A43D1DC2E09900072FDE /* Live.storyboard in Resources */,
 				4E54A43B1DC2E04500072FDE /* Home.storyboard in Resources */,
+				4EA9EE941DCC709F004793B7 /* RecommendCycleView.xib in Resources */,
 				4E56A2DD1DC98865004C5FA8 /* CollectionPrettyCell.xib in Resources */,
 				4E54A4421DC2E0DE00072FDE /* Profile.storyboard in Resources */,
 				4E54A4401DC2E0B100072FDE /* Follow.storyboard in Resources */,
@@ -711,6 +721,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EA9EE921DCC705E004793B7 /* RecommendCycleView.swift in Sources */,
 				4E8F50E71DC1E3C3001303AD /* AppDelegate.swift in Sources */,
 				4E56A2D41DC973AF004C5FA8 /* CollectionHeaderView.swift in Sources */,
 				4E1027BD1DC6DB0F0019BEC7 /* UIColor-Extension.swift in Sources */,
@@ -723,6 +734,7 @@
 				4E54A4581DC325DC00072FDE /* UIBarButtonItem-Extension.swift in Sources */,
 				4E54A45C1DC33CFE00072FDE /* Common.swift in Sources */,
 				4E2057AE1DCAEB8600A76C0E /* NSDate-Extension.swift in Sources */,
+				4EA9EE901DCC6736004793B7 /* CollectionBaseCell.swift in Sources */,
 				4E56A2DC1DC98865004C5FA8 /* CollectionPrettyCell.swift in Sources */,
 				4E56A2D81DC97CBF004C5FA8 /* CollectionNormalCell.swift in Sources */,
 				4E2057A91DCAD7F500A76C0E /* NetworkTools.swift in Sources */,

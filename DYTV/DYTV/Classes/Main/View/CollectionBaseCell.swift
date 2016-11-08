@@ -44,6 +44,7 @@ class CollectionBaseCell: UICollectionViewCell {
              let resource = ImageResource.init(downloadURL: iconURL)
              */
             iconImageView.kf.setImage(with: resource)
+            
         }
     }
     

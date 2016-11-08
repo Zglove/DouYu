@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionCycleCell" customModule="DYTV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="308" height="131"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="308" height="131"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Img_default" translatesAutoresizingMaskIntoConstraints="NO" id="d3L-cL-VSx"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="42g-y5-MUY">
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="斗鱼直播" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5gn-vt-pK1">
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.29999999999999999" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="D3l-3z-wiI"/>
+                            <constraint firstItem="5gn-vt-pK1" firstAttribute="centerY" secondItem="42g-y5-MUY" secondAttribute="centerY" id="mk6-EU-6yl"/>
+                            <constraint firstItem="5gn-vt-pK1" firstAttribute="leading" secondItem="42g-y5-MUY" secondAttribute="leading" constant="15" id="unA-4h-dDL"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="d3L-cL-VSx" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="1fp-cX-Y8H"/>
+                <constraint firstAttribute="bottom" secondItem="d3L-cL-VSx" secondAttribute="bottom" id="3g9-cj-DfC"/>
+                <constraint firstAttribute="trailing" secondItem="d3L-cL-VSx" secondAttribute="trailing" id="H0O-Ie-fQl"/>
+                <constraint firstItem="42g-y5-MUY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="QIL-VS-5Ej"/>
+                <constraint firstAttribute="bottom" secondItem="42g-y5-MUY" secondAttribute="bottom" id="ida-n6-HOS"/>
+                <constraint firstItem="d3L-cL-VSx" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="jYs-x3-wpK"/>
+                <constraint firstAttribute="trailing" secondItem="42g-y5-MUY" secondAttribute="trailing" id="tZ7-kW-lYc"/>
+            </constraints>
+            <size key="customSize" width="308" height="131"/>
+            <connections>
+                <outlet property="iconImageView" destination="d3L-cL-VSx" id="Da7-Wn-gKJ"/>
+                <outlet property="titleLabel" destination="5gn-vt-pK1" id="gOF-LA-Hq8"/>
+            </connections>
+            <point key="canvasLocation" x="-93" y="3.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Img_default" width="172" height="103"/>
+    </resources>
+</document>

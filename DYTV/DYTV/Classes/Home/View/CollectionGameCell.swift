@@ -15,17 +15,22 @@ class CollectionGameCell: UICollectionViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     
     //MARK:- 定义模型属性
-    var group: AnchorGroup? {
+    var baseGame: BaseGameModel? {
         didSet{
-           titleLabel.text = group?.tag_name
+           titleLabel.text = baseGame?.tag_name
             
-            if group?.icon_url == "" {//“更多”
+            if baseGame?.icon_url == "" {//“更多”
                 iconImageView.image = UIImage(named: "home_more_btn")
                 
             }else{
-                let iconURL = URL(string: (group?.icon_url)!)
+                let iconURL = URL(string: (baseGame?.icon_url)!)
                 let resource = ImageResource.init(downloadURL: iconURL!)
+                /*
+                 这里Resource直接填iconURL也可以
+                 iconImageView.kf.setImage(with: iconURL, placeholder: UIImage(named: "home_more_btn"))
+                 */
                 iconImageView.kf.setImage(with: resource, placeholder: UIImage(named: "home_more_btn"))
+                
             }
         }
     }

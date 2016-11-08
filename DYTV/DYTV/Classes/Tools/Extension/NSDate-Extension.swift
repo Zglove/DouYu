@@ -8,9 +8,10 @@
 
 import Foundation
 
-extension NSDate {
-    class func getCurrentTime() -> String {
-       let nowDate = NSDate()
+extension Date {
+    //Date在swift3.0中是结构体，不是类不能用class（只能在类中修饰），非类中可用static修饰
+    static func getCurrentTime() -> String {
+       let nowDate = Date()
         let interval = Int(nowDate.timeIntervalSince1970)
         return "\(interval)"
     }

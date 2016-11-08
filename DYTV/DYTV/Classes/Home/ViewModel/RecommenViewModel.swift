@@ -26,14 +26,14 @@ extension RecommenViewModel {
     func requestData(finishedCallback: @escaping () -> ()){
     
         //-1.定义参数
-        let parameters = ["limit":"4", "offset":"0","time": NSDate.getCurrentTime() as NSString]
+        let parameters = ["limit":"4", "offset":"0","time": Date.getCurrentTime() as NSString]
         
         //0.创建Group
         let dGroup = DispatchGroup.init()
         
        //1.请求第一部分推荐数据http://capi.douyucdn.cn/api/v1/getbigDataRoom
         DispatchGroup.enter(dGroup)()//进入组
-        NetworkTools.requestData(type: .GET, URLString: "http://capi.douyucdn.cn/api/v1/getbigDataRoom", parameters: ["time": NSDate.getCurrentTime() as NSString]) { (result) in
+        NetworkTools.requestData(type: .GET, URLString: "http://capi.douyucdn.cn/api/v1/getbigDataRoom", parameters: ["time": Date.getCurrentTime() as NSString]) { (result) in
             
             //1.将result转成字典类型
             guard let resultDic = result as? [String: NSObject] else {return}

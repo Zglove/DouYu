@@ -16,8 +16,8 @@ enum MethodType {
 
 class NetworkTools {
 
-    //[String: NSString]  字典
-    class func requestData(type: MethodType, URLString: String, parameters: [String: NSString]? = nil, finishedCallback: @escaping (_ result: AnyObject) -> ()) {
+    //[String: NSString]  字典   @escaping关键字逃逸，用来修饰闭包中的闭包
+    class func requestData(type: MethodType, URLString: String, parameters: [String: Any]? = nil, finishedCallback: @escaping (_ result: Any) -> ()) {
       //1.获取类型
         let method = type == .GET ? HTTPMethod.get : HTTPMethod.post
         //2.发送网络请求
@@ -28,7 +28,7 @@ class NetworkTools {
                 return
             }
             //4.将结果回调出去
-            finishedCallback(rst as AnyObject)
+            finishedCallback(rst)
         }
         
     }

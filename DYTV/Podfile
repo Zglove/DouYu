@@ -17,6 +17,6 @@ target 'DYTV' do
     inherit! :search_paths
     # Pods for testing
   end
-pod 'Alamofire'
-pod 'Kingfisher'
+pod 'Alamofire', '~> 4.0.1'
+pod 'Kingfisher', '~> 3.1.4'
 end

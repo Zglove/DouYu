@@ -40,6 +40,8 @@
 		4E6BBE301DD2D35000BC9ADF /* AmuseMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E6BBE2F1DD2D35000BC9ADF /* AmuseMenuView.xib */; };
 		4E6BBE331DD2F23500BC9ADF /* AmuseMenuViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6BBE311DD2F23500BC9ADF /* AmuseMenuViewCell.swift */; };
 		4E6BBE341DD2F23500BC9ADF /* AmuseMenuViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E6BBE321DD2F23500BC9ADF /* AmuseMenuViewCell.xib */; };
+		4E6BBE361DD3032600BC9ADF /* FunnyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6BBE351DD3032600BC9ADF /* FunnyViewController.swift */; };
+		4E6BBE381DD3074700BC9ADF /* FunnyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6BBE371DD3074700BC9ADF /* FunnyViewModel.swift */; };
 		4E7455611DD0182000E045F0 /* CycleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7455601DD0181F00E045F0 /* CycleModel.swift */; };
 		4E7455641DD0204E00E045F0 /* CollectionCycleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7455621DD0204E00E045F0 /* CollectionCycleCell.swift */; };
 		4E7455651DD0204F00E045F0 /* CollectionCycleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E7455631DD0204E00E045F0 /* CollectionCycleCell.xib */; };
@@ -113,6 +115,8 @@
 		4E6BBE2F1DD2D35000BC9ADF /* AmuseMenuView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AmuseMenuView.xib; sourceTree = "<group>"; };
 		4E6BBE311DD2F23500BC9ADF /* AmuseMenuViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmuseMenuViewCell.swift; sourceTree = "<group>"; };
 		4E6BBE321DD2F23500BC9ADF /* AmuseMenuViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AmuseMenuViewCell.xib; sourceTree = "<group>"; };
+		4E6BBE351DD3032600BC9ADF /* FunnyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunnyViewController.swift; sourceTree = "<group>"; };
+		4E6BBE371DD3074700BC9ADF /* FunnyViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunnyViewModel.swift; sourceTree = "<group>"; };
 		4E7455601DD0181F00E045F0 /* CycleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CycleModel.swift; sourceTree = "<group>"; };
 		4E7455621DD0204E00E045F0 /* CollectionCycleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionCycleCell.swift; sourceTree = "<group>"; };
 		4E7455631DD0204E00E045F0 /* CollectionCycleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionCycleCell.xib; sourceTree = "<group>"; };
@@ -193,6 +197,7 @@
 				4E2057AB1DCAE3A900A76C0E /* RecommenViewModel.swift */,
 				4EB271AB1DD1A2480004AC83 /* GameViewModel.swift */,
 				4E41FA691DD2AF0400B55498 /* AmuseViewModel.swift */,
+				4E6BBE371DD3074700BC9ADF /* FunnyViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -213,6 +218,7 @@
 				4E12F55F1DC86AC5001E4D1B /* RecommendViewController.swift */,
 				4E1E0ACA1DD1804700691048 /* GameViewController.swift */,
 				4E41FA671DD2AA4500B55498 /* AmuseViewController.swift */,
+				4E6BBE351DD3032600BC9ADF /* FunnyViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -802,11 +808,13 @@
 				4E12F5601DC86AC5001E4D1B /* RecommendViewController.swift in Sources */,
 				4E2057B01DCB0ADC00A76C0E /* AnchorGroup.swift in Sources */,
 				4E6BBE331DD2F23500BC9ADF /* AmuseMenuViewCell.swift in Sources */,
+				4E6BBE361DD3032600BC9ADF /* FunnyViewController.swift in Sources */,
 				4E2057AC1DCAE3A900A76C0E /* RecommenViewModel.swift in Sources */,
 				4E54A4441DC2E6BB00072FDE /* MainViewController.swift in Sources */,
 				4E41FA6D1DD2B55C00B55498 /* BaseViewModel.swift in Sources */,
 				4E7455641DD0204E00E045F0 /* CollectionCycleCell.swift in Sources */,
 				4EB271AE1DD1A5520004AC83 /* GameModel.swift in Sources */,
+				4E6BBE381DD3074700BC9ADF /* FunnyViewModel.swift in Sources */,
 				4EB271B01DD1A7630004AC83 /* BaseGameModel.swift in Sources */,
 				4E7455611DD0182000E045F0 /* CycleModel.swift in Sources */,
 				4E41FA681DD2AA4500B55498 /* AmuseViewController.swift in Sources */,

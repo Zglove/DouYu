@@ -13,9 +13,9 @@
 
 import UIKit
 
-fileprivate let bigDataURL: String = "http://capi.douyucdn.cn/api/v1/getbigDataRoom"
-fileprivate let prettyURL: String = "http://capi.douyucdn.cn/api/v1/getVerticalRoom"
-fileprivate let gameURL: String = "http://capi.douyucdn.cn/api/v1/getHotCate"
+private let kBigDataURL: String = "http://capi.douyucdn.cn/api/v1/getbigDataRoom"
+private let kPrettyURL: String = "http://capi.douyucdn.cn/api/v1/getVerticalRoom"
+private let kGameURL: String = "http://capi.douyucdn.cn/api/v1/getHotCate"
 
 class RecommenViewModel: BaseViewModel {
     //MARK:- 懒加载属性
@@ -38,7 +38,7 @@ extension RecommenViewModel {
        //1.请求第一部分推荐数据http://capi.douyucdn.cn/api/v1/getbigDataRoom
         dGroup.enter()//进入组
         
-        NetworkTools.requestData(type: .GET, URLString: bigDataURL, parameters: ["time": Date.getCurrentTime() as NSString]) { (result) in
+        NetworkTools.requestData(type: .GET, URLString: kBigDataURL, parameters: ["time": Date.getCurrentTime() as NSString]) { (result) in
             
             //1.将result转成字典类型
             guard let resultDic = result as? [String: NSObject] else {return}
@@ -66,7 +66,7 @@ extension RecommenViewModel {
         
          //2.请求第二部分颜值数据
         dGroup.enter()//进入组
-        NetworkTools.requestData(type: .GET, URLString: prettyURL, parameters: parameters) { (result) in
+        NetworkTools.requestData(type: .GET, URLString: kPrettyURL, parameters: parameters) { (result) in
             
             
             //1.将result转成字典类型
@@ -92,7 +92,7 @@ extension RecommenViewModel {
 
         //3.请求后面2-12部分的游戏数据
         dGroup.enter()//进入组
-        loadAnchorData(URLString: gameURL, parameters: parameters) {
+        loadAnchorData(URLString: kGameURL, parameters: parameters) {
             
             dGroup.leave()
         }

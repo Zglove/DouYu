@@ -8,13 +8,13 @@
 
 import UIKit
 
-fileprivate let AmuseURL: String = "http://capi.douyucdn.cn/api/v1/getHotRoom/2"
+private let kAmuseURL: String = "http://capi.douyucdn.cn/api/v1/getHotRoom/2"
 
 class AmuseViewModel: BaseViewModel {
    
 }
 extension AmuseViewModel {
     func loadAmuseData(finishedCallback: @escaping () -> ()){
-      loadAnchorData(URLString: AmuseURL, finishedCallback: finishedCallback)
+      loadAnchorData(URLString: kAmuseURL, finishedCallback: finishedCallback)
     }
 }

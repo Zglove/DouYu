@@ -7,13 +7,14 @@
 //
 
 import UIKit
+private let kGameURL: String = "http://capi.douyucdn.cn/api/v1/getColumnDetail"
 
 class GameViewModel {
     lazy var games: [GameModel] = [GameModel]()
 }
 extension GameViewModel {
     func loadAllGameData(finishedCallBack: @escaping () -> ()){
-        NetworkTools.requestData(type: .GET, URLString: "http://capi.douyucdn.cn/api/v1/getColumnDetail", parameters: ["shortName":"game"]) { (result) in
+        NetworkTools.requestData(type: .GET, URLString: kGameURL, parameters: ["shortName":"game"]) { (result) in
             
             //1.获取到数据    [String: Any]swift3.0中的字典
             guard let resultDict = result as? [String: Any] else { return }

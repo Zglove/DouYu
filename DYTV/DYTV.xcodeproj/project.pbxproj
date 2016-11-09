@@ -42,6 +42,7 @@
 		4E6BBE341DD2F23500BC9ADF /* AmuseMenuViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E6BBE321DD2F23500BC9ADF /* AmuseMenuViewCell.xib */; };
 		4E6BBE361DD3032600BC9ADF /* FunnyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6BBE351DD3032600BC9ADF /* FunnyViewController.swift */; };
 		4E6BBE381DD3074700BC9ADF /* FunnyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6BBE371DD3074700BC9ADF /* FunnyViewModel.swift */; };
+		4E6BBE3A1DD3195A00BC9ADF /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6BBE391DD3195A00BC9ADF /* BaseViewController.swift */; };
 		4E7455611DD0182000E045F0 /* CycleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7455601DD0181F00E045F0 /* CycleModel.swift */; };
 		4E7455641DD0204E00E045F0 /* CollectionCycleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7455621DD0204E00E045F0 /* CollectionCycleCell.swift */; };
 		4E7455651DD0204F00E045F0 /* CollectionCycleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E7455631DD0204E00E045F0 /* CollectionCycleCell.xib */; };
@@ -117,6 +118,7 @@
 		4E6BBE321DD2F23500BC9ADF /* AmuseMenuViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AmuseMenuViewCell.xib; sourceTree = "<group>"; };
 		4E6BBE351DD3032600BC9ADF /* FunnyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunnyViewController.swift; sourceTree = "<group>"; };
 		4E6BBE371DD3074700BC9ADF /* FunnyViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunnyViewModel.swift; sourceTree = "<group>"; };
+		4E6BBE391DD3195A00BC9ADF /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		4E7455601DD0181F00E045F0 /* CycleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CycleModel.swift; sourceTree = "<group>"; };
 		4E7455621DD0204E00E045F0 /* CollectionCycleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionCycleCell.swift; sourceTree = "<group>"; };
 		4E7455631DD0204E00E045F0 /* CollectionCycleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionCycleCell.xib; sourceTree = "<group>"; };
@@ -259,6 +261,7 @@
 				4E8F50EA1DC1E3C3001303AD /* Main.storyboard */,
 				4E54A4431DC2E6BB00072FDE /* MainViewController.swift */,
 				4E41FA6E1DD2BC6B00B55498 /* BaseAnchorViewController.swift */,
+				4E6BBE391DD3195A00BC9ADF /* BaseViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -802,6 +805,7 @@
 				4E41FA6A1DD2AF0400B55498 /* AmuseViewModel.swift in Sources */,
 				4E56A2D41DC973AF004C5FA8 /* CollectionHeaderView.swift in Sources */,
 				4EB271AC1DD1A2480004AC83 /* GameViewModel.swift in Sources */,
+				4E6BBE3A1DD3195A00BC9ADF /* BaseViewController.swift in Sources */,
 				4E1027BD1DC6DB0F0019BEC7 /* UIColor-Extension.swift in Sources */,
 				4E41FA6F1DD2BC6B00B55498 /* BaseAnchorViewController.swift in Sources */,
 				4E1E0ACB1DD1804700691048 /* GameViewController.swift in Sources */,

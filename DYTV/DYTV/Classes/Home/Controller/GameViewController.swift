@@ -17,7 +17,7 @@ fileprivate let kGameViewH: CGFloat = 90
 fileprivate let kGameCellID: String = "kGameCellID"
 fileprivate let kHeaderViewID: String = "kHeaderViewID"
 
-class GameViewController: UIViewController {
+class GameViewController: BaseViewController {
 
     //MARK:- 懒加载属性
     fileprivate lazy var collectionView: UICollectionView = {[unowned self] in
@@ -71,7 +71,11 @@ class GameViewController: UIViewController {
 }
 //MARK:- 设置UI界面
 extension GameViewController {
-    fileprivate func setupUI(){
+      override func setupUI(){
+        
+        //0.给父类的contenView赋值
+        contenView = collectionView
+ 
         //1.添加UICollectionView
        view.addSubview(collectionView)
         
@@ -83,6 +87,9 @@ extension GameViewController {
         
         //3.设置collectionView内边距
         collectionView.contentInset = UIEdgeInsets(top: kHeaderViewH + kGameViewH, left: 0, bottom: 0, right: 0)
+        
+        //4.调用父类的setupUI
+        super.setupUI()
     }
 }
 //MARK:- 请求数据
@@ -102,6 +109,9 @@ extension GameViewController {
              self.gameView.groups = tempArray
          */
         self.gameView.groups = Array(self.gameVM.games[0..<10])//取出来的是ArraySlice类型所以需转成Array
+        
+        //3.数据请求完成
+        self.loadDataFinished()
         
     }
   }

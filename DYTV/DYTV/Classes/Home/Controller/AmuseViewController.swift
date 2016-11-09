@@ -43,13 +43,17 @@ extension AmuseViewController {
         baseVM = amuseVM
         
         //2.请求数据
-       amuseVM.loadAmuseData { 
+       amuseVM.loadAmuseData {
+            //2.1刷新表格
             self.collectionView.reloadData()
             
-            //第一个 最热 不显示
+            //2.2调整数据
             var tempGroups = self.amuseVM.anchorGroups
             tempGroups.removeFirst()
             self.menuView.groups = tempGroups
+        
+            //2.3数据请求完成
+            self.loadDataFinished()
         }
     }
 }

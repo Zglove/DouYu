@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AmuseMenuView" customModule="DYTV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="UXV-aS-YGo">
+                    <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="currentPageIndicatorTintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </pageControl>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="9T4-eX-nYI">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Qtk-Pm-lNQ">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="e6k-XZ-U7Y"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="Luv-J8-0Gx"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="UXV-aS-YGo" secondAttribute="bottom" constant="-5" id="4Sj-TP-RyS"/>
+                <constraint firstItem="9T4-eX-nYI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="KcB-Yc-oSl"/>
+                <constraint firstItem="UXV-aS-YGo" firstAttribute="top" secondItem="9T4-eX-nYI" secondAttribute="bottom" constant="-5" id="MOQ-wn-00M"/>
+                <constraint firstItem="9T4-eX-nYI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Vop-F6-dL6"/>
+                <constraint firstItem="UXV-aS-YGo" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="XG8-7a-K1u"/>
+                <constraint firstAttribute="trailing" secondItem="9T4-eX-nYI" secondAttribute="trailing" id="YMl-17-lUf"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="collectionView" destination="9T4-eX-nYI" id="yeQ-TD-O62"/>
+                <outlet property="pageControl" destination="UXV-aS-YGo" id="ymv-an-Rqf"/>
+            </connections>
+            <point key="canvasLocation" x="-79" y="6"/>
+        </view>
+    </objects>
+</document>

@@ -56,6 +56,9 @@
 		4E8F50F11DC1E3C4001303AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E8F50EF1DC1E3C4001303AD /* LaunchScreen.storyboard */; };
 		4E8F50FC1DC1E3C5001303AD /* DYTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8F50FB1DC1E3C5001303AD /* DYTVTests.swift */; };
 		4E8F51071DC1E3C5001303AD /* DYTVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8F51061DC1E3C5001303AD /* DYTVUITests.swift */; };
+		4EA7580F1DD3FAF200F4E8A8 /* RoomShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA7580E1DD3FAF200F4E8A8 /* RoomShowViewController.swift */; };
+		4EA758111DD3FB6700F4E8A8 /* RoomNormalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA758101DD3FB6700F4E8A8 /* RoomNormalViewController.swift */; };
+		4EA758131DD3FF1800F4E8A8 /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA758121DD3FF1800F4E8A8 /* CustomNavigationController.swift */; };
 		4EA9EE901DCC6736004793B7 /* CollectionBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA9EE8F1DCC6735004793B7 /* CollectionBaseCell.swift */; };
 		4EA9EE921DCC705E004793B7 /* RecommendCycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA9EE911DCC705E004793B7 /* RecommendCycleView.swift */; };
 		4EA9EE941DCC709F004793B7 /* RecommendCycleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EA9EE931DCC709F004793B7 /* RecommendCycleView.xib */; };
@@ -138,6 +141,9 @@
 		4E8F51021DC1E3C5001303AD /* DYTVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DYTVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E8F51061DC1E3C5001303AD /* DYTVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYTVUITests.swift; sourceTree = "<group>"; };
 		4E8F51081DC1E3C5001303AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EA7580E1DD3FAF200F4E8A8 /* RoomShowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomShowViewController.swift; sourceTree = "<group>"; };
+		4EA758101DD3FB6700F4E8A8 /* RoomNormalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomNormalViewController.swift; sourceTree = "<group>"; };
+		4EA758121DD3FF1800F4E8A8 /* CustomNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
 		4EA9EE8F1DCC6735004793B7 /* CollectionBaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionBaseCell.swift; sourceTree = "<group>"; };
 		4EA9EE911DCC705E004793B7 /* RecommendCycleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendCycleView.swift; sourceTree = "<group>"; };
 		4EA9EE931DCC709F004793B7 /* RecommendCycleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecommendCycleView.xib; sourceTree = "<group>"; };
@@ -260,8 +266,9 @@
 			children = (
 				4E8F50EA1DC1E3C3001303AD /* Main.storyboard */,
 				4E54A4431DC2E6BB00072FDE /* MainViewController.swift */,
-				4E41FA6E1DD2BC6B00B55498 /* BaseAnchorViewController.swift */,
 				4E6BBE391DD3195A00BC9ADF /* BaseViewController.swift */,
+				4E41FA6E1DD2BC6B00B55498 /* BaseAnchorViewController.swift */,
+				4EA758121DD3FF1800F4E8A8 /* CustomNavigationController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -422,6 +429,7 @@
 			isa = PBXGroup;
 			children = (
 				4E8F51181DC1EE8B001303AD /* Main */,
+				4EA7580A1DD3FA8900F4E8A8 /* Room */,
 				4E8F51161DC1EE8B001303AD /* Home */,
 				4E8F51171DC1EE8B001303AD /* Live */,
 				4E8F51151DC1EE8B001303AD /* Follow */,
@@ -491,6 +499,39 @@
 				4E54A45B1DC33CFE00072FDE /* Common.swift */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		4EA7580A1DD3FA8900F4E8A8 /* Room */ = {
+			isa = PBXGroup;
+			children = (
+				4EA7580B1DD3FA8900F4E8A8 /* Controller */,
+				4EA7580C1DD3FA8900F4E8A8 /* Model */,
+				4EA7580D1DD3FA8900F4E8A8 /* View */,
+			);
+			path = Room;
+			sourceTree = "<group>";
+		};
+		4EA7580B1DD3FA8900F4E8A8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4EA7580E1DD3FAF200F4E8A8 /* RoomShowViewController.swift */,
+				4EA758101DD3FB6700F4E8A8 /* RoomNormalViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4EA7580C1DD3FA8900F4E8A8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4EA7580D1DD3FA8900F4E8A8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		AE54F3072CB522A9F77D4A12 /* Pods */ = {
@@ -812,6 +853,8 @@
 				4E12F5601DC86AC5001E4D1B /* RecommendViewController.swift in Sources */,
 				4E2057B01DCB0ADC00A76C0E /* AnchorGroup.swift in Sources */,
 				4E6BBE331DD2F23500BC9ADF /* AmuseMenuViewCell.swift in Sources */,
+				4EA758131DD3FF1800F4E8A8 /* CustomNavigationController.swift in Sources */,
+				4EA758111DD3FB6700F4E8A8 /* RoomNormalViewController.swift in Sources */,
 				4E6BBE361DD3032600BC9ADF /* FunnyViewController.swift in Sources */,
 				4E2057AC1DCAE3A900A76C0E /* RecommenViewModel.swift in Sources */,
 				4E54A4441DC2E6BB00072FDE /* MainViewController.swift in Sources */,
@@ -833,6 +876,7 @@
 				4E56A2DC1DC98865004C5FA8 /* CollectionPrettyCell.swift in Sources */,
 				4E74556C1DD081B200E045F0 /* CollectionGameCell.swift in Sources */,
 				4E56A2D81DC97CBF004C5FA8 /* CollectionNormalCell.swift in Sources */,
+				4EA7580F1DD3FAF200F4E8A8 /* RoomShowViewController.swift in Sources */,
 				4E2057A91DCAD7F500A76C0E /* NetworkTools.swift in Sources */,
 				4E54A4551DC2F04C00072FDE /* HomeViewController.swift in Sources */,
 				4E2057B21DCB17D600A76C0E /* AnchorModel.swift in Sources */,
